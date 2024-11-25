@@ -1,0 +1,22 @@
+<!-- 
+ createElement 함수는 직접 만들어보기
+-->
+
+<body>
+  <div id="app"></div>
+
+  <script src="./createElement.js"></script>
+  <script src="https://unpkg.com/react@16.12.0/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@16.12.0/umd/react-dom.development.js"></script>
+
+  <script>
+    const rootElement = document.getElementById("app");
+    var text = "hello";
+    const element = React.createElement("div", { textElement: "hello", className: "title" });
+    rootElement.appendChild(element);
+
+    console.log(element);
+
+    // ReactDOM.render(element, rootElement);
+  </script>
+</body>
